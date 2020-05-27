@@ -1,10 +1,16 @@
-name: "asonteuhaosentuhaoesnhuaosentuhaoe09uoe0u9aoeuaoeuraoehuaoeunhaoeusntaoeunstaoheusnhtaoaoeu"
-description: "Sample Action Example: Processing Data"
-author: "aronchick"
+# action.yml
+name: 'sracoeu09aoeu0a9oeguarotehuansotehuaonteu'
+description: 'Greet someone and record the time'
 inputs:
-  METASTORE_CREDENTIALS:
-    description: "Some text"
+  who-to-greet:  # id of input
+    description: 'Who to greet'
     required: true
+    default: 'World'
+outputs:
+  time: # id of output
+    description: 'The time we greeted you'
 runs:
-  using: "docker"
-  image: "Dockerfile"
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.who-to-greet }}
