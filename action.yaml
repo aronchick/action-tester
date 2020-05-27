@@ -1,0 +1,10 @@
+name: "asonteuhaosentuhaoesnhuaosentuhaoe09uoe0u9aoeuaoeuraoehuaoeunhaoeusntaoeunstaoheusnhtaoaoeu"
+description: "Sample Action Example: Processing Data"
+author: "aronchick"
+inputs:
+  METASTORE_CREDENTIALS:
+    description: "Some text"
+    required: true
+runs:
+  using: "docker"
+  image: "Dockerfile"
